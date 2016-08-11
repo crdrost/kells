@@ -181,7 +181,7 @@ Signatures are essentially written in JSON with S-expressions; they can be any o
 Naturally when `kells` gets operators the idea is for a `$typeSignature` to also become a
 `$parseTree` that is written normally as a string in `kells`, similar to how Haskell behaves.
 
-## kells.evaluate :: `(expr: string | $parseTree, lib: dict(_), type_lib: dict($typeExpression)?, intended_type: $typeExpression?)
+## kells.evaluate :: `(expr: string | $parseTree, lib: dict(_), type_lib: dict($typeExpression)?, intended_type: $typeExpression?)`
 The function `kells.evaluate` takes a parse tree and a dictionary mapping identifiers to values.
 When the parse tree calls for a function application, it uses strict semantics, evaluating first the
 function expression and second the argument, and then feeds that argument to the function.
